@@ -6,9 +6,9 @@
         o.clear()
         h.clear()
         while j != hile:
-            toode = input("Sisesta toode: ")
+            toode = str(input("Sisesta toode: "))
             o.append(toode)
-            hind = input("Sisesta hind: ")
+            hind = int(input("Sisesta hind: "))
             h.append(hind)
             j += 1
         print(o,"\n",h)
@@ -23,10 +23,10 @@ def koostamine (o:list,h:list,ostnud:list,ostnudh:list):
     mitutoode = int(input("Mitu toodet sa ostnud?"))
     j = 0
     while j != mitutoode:
-        toode = input("Sisesta toode: ")
+        toode = str(input("Sisesta toode: "))
         ostnud.append(toode)
         o.remove(toode)
-        hind = input("Sisesta hind: ")
+        hind = int(input("Sisesta hind: "))
         ostnudh.append(hind)
         h.remove(hind)
         j += 1
@@ -66,9 +66,9 @@ def tahtleia(o:list,h:list):
         h.clear()
         print(o,"\n",h)
     elif answer == 2:
-        toode = input("Sisesta toode: ")
+        toode = str(input("Sisesta toode: "))
         o.append(toode)
-        hind = input("Sisesta hind: ")
+        hind = int(input("Sisesta hind: "))
         h.append(hind)
         print(o,"\n",h)
 

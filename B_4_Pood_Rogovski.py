@@ -8,7 +8,7 @@ ostnudh=[]
 print("Tere!")
 pood(ostud,hinnad)
 while True:
-    #try:
+    try:
         choice=int(input("0 - vaata ostud ja hinnad\n1 - Koosta tšekk\n2 - Näitab tähestikulises järjekorras\n3 - Leia kõige kallim/odavam kaup\n4 - Leia hind\n5 - Clear nimekirja ja lisa andmed\n6 - exit\n"))
         if choice == 0:
             print(ostud,"\n",hinnad)
@@ -24,5 +24,5 @@ while True:
             tahtleia(ostud,hinnad)
         elif choice == 6:
             break
-    #except ValueError:
-    #    print("vale andmetüüp!")
+    except ValueError:
+        print("vale andmetüüp!")
